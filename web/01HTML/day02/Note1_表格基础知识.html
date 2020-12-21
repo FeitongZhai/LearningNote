@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第二天笔记</title>
+</head>
+<body>
+    <!--能够利用列表、表格和表单完成注册网页-->
+    <!--
+    表格：用来展示数据
+    列表：用来布局
+    表单：用来收集信息
+    -->
+
+    <!--表格 table  可用来布局，适合展示大量数据
+        <table></table>  表格标签
+        <tr></tr>  行标签
+        <td></td>  单元格标签
+        一个完整的表格有表格标签（table），行标签（tr）,单位格标签（td），没有列标签
+        <tr></tr>中只能嵌套<td></td>类的单元格
+        <td></td>标签像容器，可以容纳所有元素
+    -->
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+        </tr>
+    </table>
+
+    <!--表单属性
+        <table border = "1"></table>
+        width height align 设置表格在网页中的水平对齐方式(right,left,center)
+        cellspacing 控制单元格之间的间隙
+        cellpadding 控制单元格内内容与边框的间隙
+    -->
+
+    <!--表头单元格 th
+    一般作用于表格的第一行和第一列，文字会居中和加粗
+    只需要用表头标签th代替td即可
+    -->
+
+    <!--表格标题标签 caption
+      <caption>个人信息表</caption>
+        caption在表格里才有意义，必须紧跟table标签。
+    -->
+
+    <!--合并单元格
+    跨行合并：rowspan="合并单元格的个数"
+    跨列合并：colspan="合并单元格的个数"
+    合并顺序是 先上 后下 先左 后右
+
+    合并步骤：1.先确定是跨行合并还是跨列合并
+             2.根据“先上后下 先左后右”的原则照导目标单元格，然后写上合并方式还有要合并的单元格数量，比如<td rowspan = "2"></td>
+             3.删除多余的单元格
+
+
+    -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单基础知识</title>
+</head>
+<body>
+    <!--表单
+        表单标签：input label textarea select
+        input控件 输入 单标签
+        <input type = "属性值" value = "你好" />
+        type属性设置不同属性值用来指定不同的控件类型
+        除了type属性还有别的属性
+        常用属性：
+            1.type：text password radio checkbox button submit reset image file
+            2.name  3.value  4.size  5.checked
+    -->
+
+    <!--
+        label标签为input元素定义标注
+        用于绑定一个表单元素，当点击label标签时，被绑定的比偶暗淡元素就会获得输入焦点。
+        第一种用法，label直接包含表单:
+        <label>用户名:<input type="text"  /></label>
+        第二章用法，for属性和id规定label与哪个表单绑定:
+        <label for="nc">昵称:</label> <input type="text" id="nc" />
+        效果：当我们鼠标点击label标签里面的文字时，光标会定位到指定表单里面。
+    -->
+
+    <!--textarea 文本域 双标签
+    <textarea>
+        文本内容
+    </textarea>
+
+    cols="每行中的字符数" rows="显示的行数" 这两属性实际开发中不用
+    -->
+
+    <!--select标签 下拉列表
+    <select>
+        <option></option>
+
+    </select>
+    select中至少含有一对option
+    在option中定义selected="selected"时，当前项即为默认选中项。
+    select实际使用比较少，缺点是样式不能修改，且不同浏览器效果不同。我们常用div+li模拟效果。
+    -->
+
+    <!--form标签 表单域
+
+    <form action="url地址" method="提交方式" name="表单名称">
+        各种表单控件
+    </form>
+    method:get/post
+    -->
+    <!--写法约定
+    1.元素属性值使用双引号语法
+    2.元素属性值可以写上的都写上
+    推荐： <input type="radio" name="name" checked="checked" />
+    -->
+</body>
+</html>

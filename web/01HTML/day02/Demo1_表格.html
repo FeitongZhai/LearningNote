@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <table  border="1" width="500" height="200"  align="center" cellspacing="0" cellpadding="20">
+        <caption>个人信息表</caption>
+       <thead>
+           <tr>
+               <th>姓名</th>
+               <th>年龄</th>
+               <!--跨行目标单元格 先上后下-->
+               <th rowspan="2">性别</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>小明</td>
+               <td>18</td>
+               <!--<td>男</td>-->
+           </tr>
+           <tr>
+               <td>小红</td>
+               <td>20</td>
+               <td>女</td>
+           </tr>
+           <tr>
+               <td colspan="3">小白</td>
+               <!--        <td>20</td>-->
+               <!--        <td>女</td>-->
+           </tr>
+       </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">脚注</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
